@@ -1,6 +1,6 @@
 module github.com/dark-warlord14/CVENotifier
 
-go 1.18.0
+go 1.18.1
 
 require (
 	github.com/mattn/go-sqlite3 v1.14.22
