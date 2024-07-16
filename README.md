@@ -1,3 +1,6 @@
+[![Go Reference](https://pkg.go.dev/badge/github.com/dark-warlord14/CVENotifier.svg)](https://pkg.go.dev/github.com/dark-warlord14/CVENotifier)
+[![Go Report Card](https://goreportcard.com/badge/github.com/dark-warlord14/CVEnotifier)](https://goreportcard.com/report/github.com/dark-warlord14/CVEnotifier)
+
 # Customized CVE FEED Notifier
 
 - This tool scrapes the CVE feed from [vuldb.com](https://vuldb.com/?), filters it based on keywords, and notifies via Slack about latest CVE only for the technology or the products you have listed as keywords.
@@ -13,7 +16,7 @@
 
 Make sure go environment is properly configured
 ```
-go install github.com/dark-warlord14/CVENotifier/cmd/CVENotifier@v0.1.2
+go install github.com/dark-warlord14/CVENotifier/cmd/CVENotifier@latest
 ```
 ## How to use?
 
@@ -33,7 +36,7 @@ CVENotifier -config config.yaml
 
 cronjob example
 ```
-0 * * * * user CVENotifier -config config.yaml 2>&1 | tee CVENotifier.log
+0 * * * * user CVENotifier -config config.yaml 2>&1 | tee -a CVENotifier.log
 ```
 
 ## Slack Notification
