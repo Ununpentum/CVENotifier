@@ -16,11 +16,11 @@
 
 Make sure go environment is properly configured
 ```
-go install github.com/dark-warlord14/CVENotifier/cmd/CVENotifier@latest
+go install https://github.com/Ununpentum/CVENotifier.git
 ```
 ## How to use?
 
-1. Set up keywords and Slack webhook in `config.yaml`:
+1. Set up keywords and Teams webhook in `config.yaml`:
 ```yaml
 keywords:
 - Floodlight
